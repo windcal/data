@@ -19,8 +19,11 @@ app.post('/hello', function(req, res) {
 });
 */
 app.get('/', function(req, res){
-    res.send('tt');
+    res.send('home');
 });
+app.get('/login', function(req, res){
+    res.send('login page')
+})
 
 const port = process.env.PORT || 1337;
 app.listen(port);
