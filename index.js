@@ -19,7 +19,7 @@ app.post('/hello', function(req, res) {
 });
 */
 app.get('/', function(req, res){
-    res.send('home 입니다.');
+    res.send('home page 입니다.');
 });
 app.get('/login', function(req, res){
     res.send('login page 입니다.')
