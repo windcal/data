@@ -2,6 +2,7 @@ var express = require('express');
 var app = express();
 var router = express.Router();
 
+/*
 router.get('/things', function(req, res) {
     res.json('GET route on things.');
 });
@@ -15,6 +16,10 @@ app.get('/hello', function(req, res) {
 
 app.post('/hello', function(req, res) {
     res.json("You just called the post method at '/hello'!\n");
+});
+*/
+app.get('/', function(req, res){
+    res.send('tt');
 });
 
 const port = process.env.PORT || 1337;
