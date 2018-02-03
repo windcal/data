@@ -22,7 +22,7 @@ app.get('/', function(req, res){
     res.send('home');
 });
 app.get('/login', function(req, res){
-    res.send('login page')
+    res.send('login page 입니다.')
 });
 
 const port = process.env.PORT || 1337;
