@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
-var router = express.Router();
+app.locals.pretty = true;
+app.set('views', './views')
+app.set('view engine', 'jade');
 
 /*
 router.get('/things', function(req, res) {
@@ -23,6 +25,9 @@ app.get('/', function(req, res){
 });
 app.get('/login', function(req, res){
     res.send('login page 입니다.')
+});
+app.get('/home', function(req,res){
+    res.render('index');
 });
 
 const port = process.env.PORT || 1337;

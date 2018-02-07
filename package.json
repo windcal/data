@@ -12,6 +12,9 @@
         "start": "node index.js"
     },
     "dependencies": {
-        "express": "^4.16.2"
+        "express": "^4.16.2",
+        "jade": "^1.11.0",
+        "pub": "^0.2.0",
+        "underscore": "^1.8.3"
     }
 }
